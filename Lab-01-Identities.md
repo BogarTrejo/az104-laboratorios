@@ -10,6 +10,8 @@ Create and configure user accounts and organizational profiles within Microsoft 
    - **Display Name:** `az104-user1`
    - **Additional Properties:** Configured Job Title as *IT Lab Administrator*, Department as *IT*, and Usage Location as *United States*.
 3. **Validation:** Confirmed successful account creation and active status.
+## 📸 Visual Evidence
+<img width="1899" height="626" alt="CreateUsersEntraID" src="https://github.com/user-attachments/assets/02bbf4c8-6610-4400-a386-b1a9df927012" />
 
 ## 🧠 Key Learnings & Architecture Notes
 - Microsoft Entra ID acts as the centralized identity directory for all Azure cloud services.
