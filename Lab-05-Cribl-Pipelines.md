@@ -42,6 +42,8 @@ In large-scale enterprise environments (such as semiconductor or cloud operation
   ]
 }
 
+```
+
 Purpose: Automates preprocessing at the edge/stream layer, ensuring high-cost indexers only receive actionable, high-value security and operational telemetry.
 
 2. Validating Pipeline Routes & Cost Efficiency Metrics
@@ -58,6 +60,5 @@ cribl logstream test --pipeline enterprise-log-optimization --file sample-app-lo
 Purpose: Ensures cluster stability, low processing latency, and zero data loss during high-volume traffic spikes.
 
 🧠 Key Learnings & Architecture Notes
-Cost Mitigation: Intelligent filtering and sampling at the Cribl layer significantly reduce per-gigabyte licensing fees in enterprise SIEMs.
-
-Decoupled Architecture: Separating log collection from final destinations provides flexibility to migrate or dual-route data (e.g., during a Splunk-to-Sentinel migration) without modifying application codebases.
+- Cost Mitigation: Intelligent filtering and sampling at the Cribl layer significantly reduce per-gigabyte licensing fees in enterprise SIEMs.
+- Decoupled Architecture: Separating log collection from final destinations provides flexibility to migrate or dual-route data (e.g., during a Splunk-to-Sentinel migration) without modifying application codebases.
