@@ -1,4 +1,4 @@
-# Lab 6: OpenTelemetry (OTEL) Collector & Telemetry Standardization
+# Lab 5: OpenTelemetry (OTEL) Collector & Telemetry Standardization
 
 ## 📌 Objective
 Design and configure an OpenTelemetry (OTEL) Collector pipeline architecture to standardize telemetry collection (metrics, logs, and traces) across multi-vendor cloud environments, establishing a vendor-neutral observability foundation.

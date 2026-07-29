@@ -1,4 +1,4 @@
-# Lab 2: Docker Essentials for Infrastructure & Observability Pipelines
+# Lab 1: Docker Essentials for Infrastructure & Observability Pipelines
 
 ## 📌 Objective
 Learn fundamental Docker container operations, ephemeral execution, and persistent storage management using volume bindings to handle log and telemetry data flows.

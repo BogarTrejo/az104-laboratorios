@@ -1,4 +1,4 @@
-# Lab 7: Azure Telemetry, AMA (Azure Monitor Agent) & ADX Architecture
+# Lab 6: Azure Telemetry, AMA (Azure Monitor Agent) & ADX Architecture
 
 ## 📌 Objective
 Design and configure a hybrid enterprise telemetry collection and analytics pipeline utilizing the Azure Monitor Agent (AMA), Microsoft Sentinel (SIEM), and Azure Data Explorer (ADX) powered by Kusto Query Language (KQL) for high-performance log analysis.

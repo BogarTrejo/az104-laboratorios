@@ -1,4 +1,4 @@
-# Lab 3: Automated CI Pipeline with GitHub Actions
+# Lab 2: Automated CI Pipeline with GitHub Actions
 
 ## 📌 Objective
 Implement a Continuous Integration (CI) pipeline using GitHub Actions to automate repository validation, ensuring code and documentation structure integrity upon every push and pull request.

@@ -1,4 +1,4 @@
-# Lab 5: Cribl Stream & Data Pipelining (Ingestion, Filtering & Routing)
+# Lab 4: Cribl Stream & Data Pipelining (Ingestion, Filtering & Routing)
 
 ## 📌 Objective
 Design, configure, and optimize enterprise-grade telemetry data pipelines using Cribl Stream to process, filter, enrich, and route logs and metrics efficiently across multi-destination architectures (Splunk, Microsoft Sentinel, and Azure Data Explorer), minimizing storage and ingestion overhead.

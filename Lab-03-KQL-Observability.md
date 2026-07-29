@@ -1,4 +1,4 @@
-# Lab 4: Cloud Observability & Kusto Query Language (KQL)
+# Lab 3: Cloud Observability & Kusto Query Language (KQL)
 
 ## 📌 Objective
 Learn and apply Kusto Query Language (KQL) fundamentals to analyze, filter, and aggregate structured log data, mimicking enterprise-grade cloud monitoring platforms (such as Azure Monitor and Microsoft Sentinel).
