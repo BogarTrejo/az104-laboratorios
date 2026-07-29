@@ -52,7 +52,7 @@ service:
 ```
 Purpose: Configures an enterprise-grade collector instance to ingest OTLP traffic safely, manage memory pressure during traffic spikes, and split metrics/traces to separate operational platforms.
 
-2. Validation & Health Check Commands
+### 2. Validation & Health Check Commands
 
 # Validate OpenTelemetry Collector configuration syntax
 otelcol-contrib --config=otel-collector-config.yaml --validate
@@ -62,7 +62,7 @@ otelcol-contrib --config=otel-collector-config.yaml --set=service.telemetry.logs
 
 Purpose: Ensures strict syntax accuracy and enables real-time troubleshooting for distributed tracing nodes.
 
-🧠 Key Learnings & Architecture Notes
-Vendor Agnosticism: Standardizes instrumentation at the application level, eliminating dependency on proprietary SDKs.
+## 🧠 Key Learnings & Architecture Notes
 
-Resource Protection: Implementing memory limiters prevents collector crashes during high-volume telemetry surges from intensive workloads.
+- Vendor Agnosticism: Standardizes instrumentation at the application level, eliminating dependency on proprietary SDKs.
+- Resource Protection: Implementing memory limiters prevents collector crashes during high-volume telemetry surges from intensive workloads.
