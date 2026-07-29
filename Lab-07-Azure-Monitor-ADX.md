@@ -53,7 +53,7 @@ In modern multi-cloud and enterprise environments (such as semiconductor enginee
 
 Purpose: Configures the modern Azure Monitor Agent (AMA) via a centralized Data Collection Rule (DCR) to selectively harvest Linux system logs and critical performance metrics directly into Microsoft Sentinel.
 
-## 2. High-Performance Telemetry Analysis using KQL (adx-query-optimization.kql)
+### 2. High-Performance Telemetry Analysis using KQL (adx-query-optimization.kql)
 ```kusto
 // Analyze high-frequency telemetry spikes and filter anomalous resource consumption
 SecurityEvent
@@ -66,7 +66,7 @@ SecurityEvent
 
 Purpose: Utilizes Kusto Query Language (KQL) within Azure Data Explorer / Log Analytics to rapidly isolate security authentication spikes and detect potential lateral movement across infrastructure nodes.
 
-## 3. Validation & Operational Commands
+### 3. Validation & Operational Commands
 
 # Verify Azure Monitor Agent status and extension health on a target node
 az vm extension show --resource-group rg-observability --vm-name linux-node-01 --name AzureMonitorLinuxAgent
