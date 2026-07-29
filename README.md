@@ -8,12 +8,12 @@ Welcome to my technical portfolio repository. This space documents hands-on engi
 
 | Lab | Focus Area | Key Technologies & Skills |
 | :--- | :--- | :--- |
-| **[Lab 02](Lab-02-Docker-Essentials.md)** | Containerization & Data Persistence | Docker, CLI, Volume Mounts, Bind Mounts, Log Simulation |
-| **[Lab 03](Lab-03-CICD-Automation.md)** | CI/CD & Infrastructure Automation | GitHub Actions, YAML Workflows, Automated Validation |
-| **[Lab 04](Lab-04-Log-Analytics.md)** | Cloud Observability & Log Analytics | Kusto Query Language (KQL), Log Filtering, Aggregation, Azure Monitor |
-| **[Lab 05](Lab-05-Cribl-Pipelines.md)** | Enterprise Data Pipelining & Routing | Cribl Stream/Edge, Log Filtering, Noise Reduction, Cost Optimization |
-| **[Lab 06](Lab-06-OpenTelemetry.md)** | Modern OpenTelemetry Collection | OTEL Collector, gRPC/HTTP Receivers, Memory Limiters, Multi-Signal Telemetry |
-| **[Lab 07](Lab-07-Azure-Monitor-ADX.md)** | Hybrid Cloud SIEM & Telemetry Analytics | Azure Monitor Agent (AMA), Microsoft Sentinel, Azure Data Explorer (ADX), KQL |
+| **[Lab 01](Lab-01-Docker-Essentials.md)** | Containerization & Data Persistence | Docker, CLI, Volume Mounts, Bind Mounts, Log Simulation |
+| **[Lab 02](Lab-02-CI-Pipeline.md)** | CI/CD & Infrastructure Automation | GitHub Actions, YAML Workflows, Automated Validation |
+| **[Lab 03](Lab-03-KQL-Observability.md)** | Cloud Observability & Log Analytics | Kusto Query Language (KQL), Log Filtering, Aggregation, Azure Monitor |
+| **[Lab 04](Lab-04-Cribl-Pipelines.md)** | Enterprise Data Pipelining & Routing | Cribl Stream/Edge, Log Filtering, Noise Reduction, Cost Optimization |
+| **[Lab 05](Lab-05-OpenTelemetry.md)** | Modern OpenTelemetry Collection | OTEL Collector, gRPC/HTTP Receivers, Memory Limiters, Multi-Signal Telemetry |
+| **[Lab 06](Lab-06-Azure-Monitor-ADX.md)** | Hybrid Cloud SIEM & Telemetry Analytics | Azure Monitor Agent (AMA), Microsoft Sentinel, Azure Data Explorer (ADX), KQL |
 
 ---
 
