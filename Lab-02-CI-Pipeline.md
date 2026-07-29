@@ -13,7 +13,7 @@ Implement a Continuous Integration (CI) pipeline using GitHub Actions to automat
    - Validated the pipeline execution in GitHub Actions, ensuring successful build status and automated directory structure inspection.
 
 ## 📸 Visual Evidence
-<img width="1516" height="350" alt="CICDPipeline" src="https://github.com/user-attachments/assets/6c2710e7-9ffd-44a9-b2e0-a6c1a9255d7f" />
+<img width="1385" height="645" alt="CICDPipeline" src="https://github.com/user-attachments/assets/d511f234-6236-4158-bdb6-af023ebefe50" />
 
 ## 🧠 Key Learnings & Architecture Notes
 - **Automation First:** Automating quality gates prevents manual oversights and mirrors modern enterprise GitOps workflows.
