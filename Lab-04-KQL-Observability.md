@@ -6,7 +6,7 @@ Learn and apply Kusto Query Language (KQL) fundamentals to analyze, filter, and 
 ## 🛠️ Concepts & Syntax
 KQL operates on tabular data streams using a pipe (`|`) architecture, passing data sequentially from left to right through filter and transformation operators.
 
-### Key Operators Used:
+**Key Operators Used:**
 - **`where`**: Filters a table to a subset of rows that satisfy a predicate.
 - **`project`**: Selects specific columns to include, rename, or drop.
 - **`summarize`**: Groups rows by specific columns and aggregates data (e.g., using `count()`).
@@ -14,6 +14,7 @@ KQL operates on tabular data streams using a pipe (`|`) architecture, passing da
 ## 💻 Practical KQL Queries Implemented
 
 ### 1. Filtering Critical Errors
+
 ```kusto
 AppLogs
 | where LogLevel == "ERROR"
