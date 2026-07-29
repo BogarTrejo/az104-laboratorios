@@ -19,18 +19,18 @@ KQL operates on tabular data streams using a pipe (`|`) architecture, passing da
 AppLogs
 | where LogLevel == "ERROR"
 | project Timestamp, ContainerName, Message
-
+```
 Purpose: Isolates severe application failures from routine operational logs to accelerate troubleshooting.
 
-2. Aggregating Error Counts by Container
+### 2. Aggregating Error Counts by Container
 
+```kusto
 AppLogs
 | where LogLevel == "ERROR"
 | summarize TotalErrors = count() by ContainerName
-
+```
 Purpose: Groups filtered errors to identify problematic infrastructure components or services at scale.
 
-🧠 Key Learnings & Architecture Notes
-Scalable Telemetry: KQL allows fast searching across millions of log lines without performance degradation.
-
-Proactive Security & Operations: Grouping and counting log events help establish baseline behaviors and detect anomalous spikes in real-time.
+## 🧠 Key Learnings & Architecture Notes
+- **Scalable Telemetry:** KQL allows fast searching across millions of log lines without performance degradation.
+- **Proactive Security & Operations:** Grouping and counting log events help establish baseline behaviors and detect anomalous spikes in real-time.
