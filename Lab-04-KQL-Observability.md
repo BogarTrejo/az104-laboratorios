@@ -19,13 +19,15 @@ KQL operates on tabular data streams using a pipe (`|`) architecture, passing da
 AppLogs
 | where LogLevel == "ERROR"
 | project Timestamp, ContainerName, Message
+
 Purpose: Isolates severe application failures from routine operational logs to accelerate troubleshooting.
 
 2. Aggregating Error Counts by Container
-Fragmento de código
+
 AppLogs
 | where LogLevel == "ERROR"
 | summarize TotalErrors = count() by ContainerName
+
 Purpose: Groups filtered errors to identify problematic infrastructure components or services at scale.
 
 🧠 Key Learnings & Architecture Notes
