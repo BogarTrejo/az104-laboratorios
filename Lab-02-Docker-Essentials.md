@@ -17,8 +17,10 @@ Learn fundamental Docker container operations, ephemeral execution, and persiste
 <img width="1433" height="331" alt="Docker1" src="https://github.com/user-attachments/assets/f8698c1a-ad7b-473b-b3f5-8d2a7967eb97" />
 @BogarTrejo ➜ /workspaces/az104-laboratorios (main) $ docker --version
 Docker version 29.3.0-1, build 5927d80c76b3ce5cf782be818922966e8a0d87a3
+
 @BogarTrejo ➜ /workspaces/az104-laboratorios (main) $ docker ps
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
 @BogarTrejo ➜ /workspaces/az104-laboratorios (main) $ docker run -it --name lab-observability ubuntu:latest bash
 Unable to find image 'ubuntu:latest' locally
 latest: Pulling from library/ubuntu
@@ -32,8 +34,11 @@ echo "2026-07-28 [INFO] Application service started successfully in container." 
 echo "2026-07-28 [ERROR] High CPU utilization detected on pipeline route." >> /var/log/app-logs/service.log
 exit
 exit
+
 @BogarTrejo ➜ /workspaces/az104-laboratorios (main) $ mkdir -p ./docker-logs-test
+
 @BogarTrejo ➜ /workspaces/az104-laboratorios (main) $ docker run --rm -v $(pwd)/docker-logs-test:/app/logs ubuntu:latest bash -c "echo '2026-07-28 [INFO] Telemetry pipeline route active and synchronized.' > /app/logs/telemetry-status.log"
+
 @BogarTrejo ➜ /workspaces/az104-laboratorios (main) $ cat ./docker-logs-test/telemetry-status.log
 2026-07-28 [INFO] Telemetry pipeline route active and synchronized.
 
