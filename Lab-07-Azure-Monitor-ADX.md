@@ -53,8 +53,8 @@ In modern multi-cloud and enterprise environments (such as semiconductor enginee
 
 Purpose: Configures the modern Azure Monitor Agent (AMA) via a centralized Data Collection Rule (DCR) to selectively harvest Linux system logs and critical performance metrics directly into Microsoft Sentinel.
 
-2. High-Performance Telemetry Analysis using KQL (adx-query-optimization.kql)
-
+## 2. High-Performance Telemetry Analysis using KQL (adx-query-optimization.kql)
+```kusto
 // Analyze high-frequency telemetry spikes and filter anomalous resource consumption
 SecurityEvent
 | where TimeGenerated > ago(24h)
@@ -62,10 +62,11 @@ SecurityEvent
 | summarize EventCount=count() by TargetAccount, AccountType, bin(TimeGenerated, 1h)
 | order by EventCount desc
 | take 10
+```
 
 Purpose: Utilizes Kusto Query Language (KQL) within Azure Data Explorer / Log Analytics to rapidly isolate security authentication spikes and detect potential lateral movement across infrastructure nodes.
 
-3. Validation & Operational Commands
+## 3. Validation & Operational Commands
 
 # Verify Azure Monitor Agent status and extension health on a target node
 az vm extension show --resource-group rg-observability --vm-name linux-node-01 --name AzureMonitorLinuxAgent
@@ -75,7 +76,7 @@ az monitor data-collection-rule list --resource-group rg-observability
 
 Purpose: Ensures agent persistence, proper extension deployment, and structural integrity of cloud data collection policies.
 
-🧠 Key Learnings & Architecture Notes
-Scalable Collection: AMA replaces legacy Log Analytics agents, offering granular stream-level control via DCRs to minimize network overhead.
+## 🧠 Key Learnings & Architecture Notes
 
-High-Speed Analytics: Leveraging KQL in ADX allows engineers to query terabytes of enterprise telemetry in seconds, unblocking security investigations and operational troubleshooting.
+- Scalable Collection: AMA replaces legacy Log Analytics agents, offering granular stream-level control via DCRs to minimize network overhead.
+- High-Speed Analytics: Leveraging KQL in ADX allows engineers to query terabytes of enterprise telemetry in seconds, unblocking security investigations and operational troubleshooting.
